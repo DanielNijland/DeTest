@@ -6,7 +6,7 @@ const CONFIG = {
 
   // Plak hier de URL van je Google Apps Script Web App.
   // Zolang deze leeg is, werkt de test lokaal maar wordt niets online opgeslagen.
-  googleScriptUrl: "https://script.google.com/macros/s/AKfycbw2iyrs-UIVaYgL2ooYK0WF4GtNqVoH_jQgsgubogQpxc9Bq7D6L84Wz0B7OwWjNiqi/exec",
+  googleScriptUrl: "https://script.google.com/macros/s/AKfycbwe07yrbPZPlD3uK2T7COSUnsYym_Scqcdvolqq0w8MhhE9NEoAJHpwJEBxSEFZhGX5/exec",
 
   candidates: [
     "Hanneke",
