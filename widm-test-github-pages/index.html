@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De Mol - Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="startScreen" class="screen active">
+      <img src="logo.png" class="logo" alt="De Mol logo" />
+      <div class="panel">
+        <p class="eyebrow">Testomgeving</p>
+        <h1>De test</h1>
+        <p class="intro">
+          Kies je naam en start de test. Je krijgt iedere vraag één keer te zien.
+          Na vraag 20 wordt je test automatisch ingeleverd.
+        </p>
+
+        <label for="candidateSelect">Kandidaat</label>
+        <select id="candidateSelect">
+          <option value="">Kies je naam</option>
+        </select>
+
+        <button id="startBtn">Start test</button>
+        <p id="startError" class="error"></p>
+      </div>
+    </section>
+
+    <section id="testScreen" class="screen">
+      <header class="testHeader">
+        <img src="logo.png" class="smallLogo" alt="De Mol logo" />
+        <div>
+          <p id="progressText" class="progressText">Vraag 1 van 20</p>
+          <div class="progressBar"><div id="progressFill"></div></div>
+        </div>
+        <div id="timer" class="timer">20:00</div>
+      </header>
+
+      <div class="questionCard">
+        <p id="questionNumber" class="eyebrow">Vraag 1</p>
+        <h2 id="questionText"></h2>
+        <div id="answers" class="answers"></div>
+      </div>
+
+      <footer class="testFooter">
+        <button id="prevBtn" class="ghost">Vorige</button>
+        <button id="nextBtn">Volgende</button>
+      </footer>
+    </section>
+
+    <section id="finishScreen" class="screen">
+      <img src="logo.png" class="logo" alt="De Mol logo" />
+      <div class="panel">
+        <p class="eyebrow">Ingeleverd</p>
+        <h1>De test is ontvangen</h1>
+        <p id="finishMessage">Je antwoorden zijn verstuurd.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
